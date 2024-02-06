@@ -18,11 +18,11 @@ ingress:
       cert-manager.io/cluster-issuer: letsencrypt-prod-dns01
       acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: prod-artemis.cuneytoghan.com
+    - host: stage-artemis.cuneytoghan.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-   - secretName: prod-artemis-tls
+   - secretName: stage-artemis-tls
      hosts:
-       - prod-artemis.cuneytoghan.com
+       - stage-artemis.cuneytoghan.com
